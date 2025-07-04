@@ -1,0 +1,25 @@
+"use client";
+import * as React from "react";
+import { useTranslations } from "next-intl";
+
+const HeroSection: React.FC = () => {
+  const t = useTranslations("Service");
+
+  return (
+    <section
+      style={{
+        backgroundImage: "url('/solutions_bg.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      className="flex overflow-hidden relative gap-10 justify-center items-start w-full text-3xl font-semibold tracking-tighter text-blue-600 whitespace-nowrap bg-sky-50 min-h-[270px] max-md:max-w-full"
+    >
+      <div className="overflow-hidden z-0 self-stretch my-auto text-blue-600 min-w-60 w-[1280px] max-md:max-w-full">
+        <h1>{t("heroTitle")}</h1>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;

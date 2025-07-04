@@ -1,0 +1,291 @@
+{
+  "Navigation": {
+    "about": "회사소개",
+    "solutions": "솔루션",
+    "service": "서비스",
+    "contact": "문의하기"
+  },
+  "Language": {
+    "english": "English",
+    "korean": "한국어"
+  },
+  "Main": {
+    "HeroSection": {
+      "title1": "금융의 미래를",
+      "title2": "더 가까이,",
+      "title3": "블록체인으로 연결하다.",
+      "desc": "확장성과 보안을 갖춘 기술로\n디지털 금융의 혁신을 이끌어갑니다.",
+      "ExploreSolutions": "솔루션 살펴보기",
+      "LearnMore": "자세히 알아보기"
+    },
+    "ContactForm": {
+      "title": "지금 시작하세요!",
+      "firstName": "이름",
+      "lastName": "성",
+      "corporateEmail": "회사 이메일 주소",
+      "emailPlaceholder": "회사 이메일 주소를 입력해주세요",
+      "phone": "전화번호",
+      "remarks": "문의사항",
+      "remarksPlaceholder": "문의 내용을 입력해주세요",
+      "submit": "Submit"
+    },
+    "FeatureSection": {
+      "title": "더 스마트하게 구축하고,\n더 빠르게 성장하세요",
+      "desc": "스타트업부터 대기업까지, DFIN은 최신 블록체인 기술로\n비즈니스 성장을 지원합니다.",
+      "card1": {
+        "title": "Who We Are",
+        "desc": "DFIN의 혁신 기술 전문가로 구성된 팀으로, 미래 성장을 이끄는 디지털 경험을 만듭니다"
+      },
+      "card2": {
+        "title": "What We Do",
+        "desc": "DFIN은 고성능 웹 및 모바일 솔루션 개발 경험으로, 고객과 파트너의 스마트한 비즈니스 성장을 돕습니다"
+      },
+      "card3": {
+        "title": "Beyond Services",
+        "desc": "개발을 넘어, 고객과의 파트너십을 통해 혁신을 가속화하고 장기적인 가치를 창출합니다"
+      },
+      "more": "more"
+    },
+    "SolutionsSection": {
+      "title": "설계부터 운영까지,\n블록체인 전 과정 통합 솔루션 – DFIN",
+      "desc": "트레이딩 시스템부터 디지털 자산 플랫폼까지,\n필요한 모든 기술을 한 번에 제공합니다.",
+      "more": "more",
+      "card1": {
+        "title": "디지털 자산 거래소 솔루션",
+        "features": [
+          "중앙화 거래소",
+          "탈중앙화 거래소",
+          "브로커 거래소 - 화이트라벨 암호화폐 거래소",
+          "Web3 지갑을 통한 하이브리드 거래소 - P2P 암호화폐 거래"
+        ],
+        "tags": ["#CEX", "#DEX", "#DApp"]
+      },
+      "card2": {
+        "title": "트레이딩 소프트웨어 솔루션",
+        "features": [
+          "알고리즘 트레이딩 소프트웨어",
+          "암호화폐 트레이딩 봇",
+          "카피 트레이딩 소프트웨어",
+          "AI 트레이딩 소프트웨어"
+        ],
+        "tags": ["#Algo", "#Bot", "#AI"]
+      },
+      "card3": {
+        "title": "Web3 솔루션",
+        "features": [
+          "코어 블록체인 개발",
+          "NFT 마켓플레이스 - 디지털 자산 게임 및 메타버스",
+          "DeFi 개발",
+          "Web3 앱 개발",
+          "스마트 컨트랙트 개발",
+          "지갑 개발",
+          "dApp 개발"
+        ],
+        "tags": ["#Web3", "#DeFi", "#Chain"]
+      }
+    },
+    "ServiceSection": {
+      "title": "DFIN Service",
+      "desc": "웹 기반 플랫폼은 물론, 안드로이드·iOS 앱부터\nWindows/Mac/Linux 데스크탑까지 지원합니다.",
+      "more": "more",
+      "steps": [
+        {
+          "title": "Service process",
+          "desc": "프로젝트 요구사항을 바탕으로 DFIN의 전문가들이 아이디어를 구체화하고, 시장 조사를 통해 인사이트를 도출합니다. 이를 통해 프로젝트의 방향성과 전략을 명확히 설정하며, 성공적인 개발을 위한 기반을 마련합니다.",
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/c4a5ea87bfc8fc7c5e64670f8c8f4f94f6424d14?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 1,
+          "bgColor": "bg-blue-50"
+        },
+        {
+          "title": "Concept Creation",
+          "desc": "아이디어 도출 과정을 기반으로, 프로젝트에 최적화된 고유한 콘셉트를 설계합니다. 본격적인 개발에 앞서 명확한 콘셉트를 수립함으로써, 방향성을 정립하고 프로젝트 전반의 완성도를 높입니다.",
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/3603fd4f8e91ee1d85951b36aab800410659850e?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 2,
+          "bgColor": "bg-green-50"
+        },
+        {
+          "title": "Development",
+          "desc": "최신 기술 스택과 고객이 원하는 기능을 반영하여 본격적인 코딩과 개발을 시작합니다. 검증된 기술과 효율적인 아키텍처를 바탕으로, 안정적이고 확장 가능한 서비스를 구현합니다.",
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ac7026840f636ef1175ca4ea9c8d8ac9f8e42f7c?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 3,
+          "bgColor": "bg-yellow-50"
+        },
+        {
+          "title": "Testing",
+          "desc": "최종 제품을 사용자에게 선보이기 전, 철저한 테스트 과정을 통해 품질을 검증하고 서비스의 안정성과 완성도를 확보합니다. 모든 기능이 원활하게 작동하는지 확인하여, 신뢰할 수 있는 제품으로 시장에 출시합니다.",
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/c4a5ea87bfc8fc7c5e64670f8c8f4f94f6424d14?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 4,
+          "bgColor": "bg-purple-50"
+        },
+        {
+          "title": "Launch",
+          "desc": "Hashcodex의 원스톱 소프트웨어 개발 서비스를 통해, 고객이 원하는 플랫폼에 프로젝트를 문제없이 출시할 수 있도록 지원합니다. 개발부터 배포까지 전 과정을 통합 관리하여, 효율적이고 매끄러운 론칭을 보장합니다.",
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/3603fd4f8e91ee1d85951b36aab800410659850e?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 5,
+          "bgColor": "bg-red-50"
+        },
+        {
+          "title": "Maintenance",
+          "desc": "프로젝트가 완료된 이후에도 Hashcodex는 지속적으로 성능을 모니터링하며, 발생할 수 있는 버그나 이슈를 신속히 해결합니다. 안정적인 운영이 유지될 수 있도록 끝까지 함께하며, 장기적인 서비스 품질을 보장합니다.",
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/3603fd4f8e91ee1d85951b36aab800410659850e?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 6,
+          "bgColor": "bg-red-50"
+        }
+      ]
+    },
+    "NewsSection": {
+      "title": "DFIN 뉴스",
+      "items": [
+        {
+          "title": "서비스 프로세스",
+          "desc": "프로젝트 요구사항을 기반으로 전문가가 아이디어를 도출하고, 시장조사를 통해 방향성을 결정합니다.",
+          "date": "2025.03.20",
+          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1c82237980e0abf06b20cf5938444dbe62ddbbd9?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+        },
+        {
+          "title": "디지털 혁신",
+          "desc": "블록체인 기술의 미래와 금융 서비스에 미치는 영향에 대해 탐구합니다. DFIN은 최신 트렌드를 연구하여 혁신적인 솔루션을 제공합니다. 디지털 금융과 블록체인 통합을 통한 기업 혁신을 선도합니다.",
+          "date": "2025.03.15",
+          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/f8c3a0fa70f823e2a7ab695415501ce321a229fe?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+        },
+        {
+          "title": "새로운 파트너십",
+          "desc": "DFIN은 주요 금융기관과 전략적 파트너십을 체결하여 블록체인 도입을 가속화합니다. 이번 협업을 통해 혁신적인 블록체인 솔루션과 지속 가능한 디지털 성장을 함께 만들어갑니다.",
+          "date": "2025.03.10",
+          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1c82237980e0abf06b20cf5938444dbe62ddbbd9?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+        }
+      ]
+    },
+    "Footer": {
+      "companyInfo": "사업자등록번호 : 107-81-12345",
+      "address": "주소 : 서울특별시 강남구 테헤란로 242, 4층",
+      "copyright": "© 2025 DFIN Inc. All rights reserved."
+    }
+  },
+  "About": {
+    "title": "회사소개",
+    "heroTitle": "About us",
+    "sectionTitle1": "Define the Right Technologies",
+    "sectionTitle2": "for Your Project",
+    "sectionDesc": "성공적인 제품 개발을 위해 적합한 기술 스택을 선택하는 것은 매우 중요한 과정입니다. 이는 개발 비용부터 시스템 성능, 장기적인 확장성에 이르기까지 전반에 큰 영향을 미칩니다. \n DFIN은 풍부한 경험과 최신 IT 트렌드에 대한 깊은 이해를 바탕으로, 고객의 비즈니스 목표에 최적화된 효율적이고 미래지향적인 기술 솔루션을 제안합니다.",
+    "FeatureCards": {
+      "card1": {
+        "title": "Who We Are",
+        "subtitle": "더 스마트한 미래를 위한 디지털 경험 구축",
+        "desc": "DFIN의 혁신 기술 전문가로 구성된 팀으로,  미래 성장을 이끄는 디지털 경험을 만듭니다"
+      },
+      "card2": {
+        "title": "What We Do",
+        "subtitle": "더 스마트한 미래를 위한 디지털 경험 구축",
+        "desc": "DFIN은 고성능 웹 및 모바일 솔루션 개발 경험으로, 고객과 파트너의 스마트한 비즈니스 성장을 돕습니다"
+      },
+      "card3": {
+        "title": "Beyond Services",
+        "subtitle": "— 우리는 성공 스토리를 만듭니다",
+        "desc": "개발을 넘어, 고객과의 파트너십을 통해 혁신을 가속화하고 장기적인 가치를 창출합니다"
+      }
+    }
+  },
+  "Service": {
+    "title": "서비스",
+    "heroTitle": "Service",
+    "ServiceProcess": {
+      "steps": [
+        {
+          "title": "Service process",
+          "desc": "프로젝트 요구사항을 바탕으로 DFIN의 전문가들이 아이디어를 구체화하고, 시장 조사를 통해 인사이트를 도출합니다. 이를 통해 프로젝트의 방향성과 전략을 명확히 설정하며, 성공적인 개발을 위한 기반을 마련합니다."
+        },
+        {
+          "title": "Concept Creation",
+          "desc": "아이디어 도출 과정을 기반으로, 프로젝트에 최적화된 고유한 콘셉트를 설계합니다. 본격적인 개발에 앞서 명확한 콘셉트를 수립함으로써, 방향성을 정립하고 프로젝트 전반의 완성도를 높입니다."
+        },
+        {
+          "title": "Development",
+          "desc": "최신 기술 스택과 고객이 원하는 기능을 반영하여 본격적인 코딩과 개발을 시작합니다. 검증된 기술과 효율적인 아키텍처를 바탕으로, 안정적이고 확장 가능한 서비스를 구현합니다."
+        },
+        {
+          "title": "Testing",
+          "desc": "최종 제품을 사용자에게 선보이기 전, 철저한 테스트 과정을 통해 품질을 검증하고 서비스의 안정성과 완성도를 확보합니다. 모든 기능이 원활하게 작동하는지 확인하여, 신뢰할 수 있는 제품으로 시장에 출시합니다."
+        },
+        {
+          "title": "Launch",
+          "desc": "Hashcodex의 원스톱 소프트웨어 개발 서비스를 통해, 고객이 원하는 플랫폼에 프로젝트를 문제없이 출시할 수 있도록 지원합니다. 개발부터 배포까지 전 과정을 통합 관리하여, 효율적이고 매끄러운 론칭을 보장합니다."
+        },
+        {
+          "title": "Maintenance",
+          "desc": "프로젝트가 완료된 이후에도 Hashcodex는 지속적으로 성능을 모니터링하며, 발생할 수 있는 버그나 이슈를 신속히 해결합니다. 안정적인 운영이 유지될 수 있도록 끝까지 함께하며, 장기적인 서비스 품질을 보장합니다."
+        }
+      ]
+    }
+  },
+  "Solutions": {
+    "title": "솔루션",
+    "heroTitle": "Solutions",
+    "SolutionsGrid": {
+      "solutions": [
+        {
+          "title": "트레이딩 소프트웨어 솔루션",
+          "details": [
+            "알고리즘 트레이딩 시스템",
+            "암호화폐 트레이딩 봇",
+            "카피 트레이딩 플랫폼",
+            "AI 기반 자동매매 솔루션"
+          ],
+          "tags": ["#Algo", "#Bot", "#AI"]
+        },
+        {
+          "title": "디지털 자산 거래소 솔루션",
+          "details": [
+            "중앙화 거래소 (CEX)",
+            "탈중앙화 거래소 (DEX)",
+            "브로커 거래소 - 화이트라벨 암호화폐 거래소",
+            "Web3 지갑을 통한 하이브리드 거래소 - P2P 암호화폐 거래"
+          ],
+          "tags": ["#CEX", "#DEX", "#DApp"]
+        },
+        {
+          "title": "Web3 솔루션",
+          "details": [
+            "블록체인 핵심 가술 개발",
+            "NFT 마켓플레이스 구축",
+            "디지털 자산 기반 게임 · 메타버스",
+            "디파이(DeFi) 플랫폼 개발",
+            "Web3 앱 및 스마트 계약 개발",
+            "암호화폐 지갑 개발",
+            "dApp 개발"
+          ],
+          "tags": ["#Web3", "#DeFi", "#체인"]
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "title": "Contact us",
+    "pageTitle": "Contact us",
+    "contactInfo": "Contact info",
+    "address": "서울특별시 강남구 테헤란로 242, 4층",
+    "email": "dfin@dfin.co.kr",
+    "phone": "02-1234-5678",
+    "firstName": "이름",
+    "lastName": "성",
+    "corporateEmail": "회사 이메일 주소",
+    "emailPlaceholder": "회사 이메일 주소를 입력해주세요",
+    "phoneLabel": "전화번호",
+    "phonePlaceholder": "전화번호를 입력해주세요",
+    "remarks": "문의사항",
+    "remarksPlaceholder": "문의 내용이나 요구사항을 자세히 기재해주세요",
+    "submit": "Submit",
+    "sending": "전송 중...",
+    "required": "필수",
+    "thankYou": "감사합니다!",
+    "successMessage": "메시지가 성공적으로 전송되었습니다. 곧 연락드리겠습니다.",
+    "sendAnother": "다른 메시지 보내기",
+    "firstNameRequired": "이름을 입력해주세요",
+    "lastNameRequired": "성을 입력해주세요",
+    "emailRequired": "이메일을 입력해주세요",
+    "invalidEmail": "올바른 이메일 주소를 입력해주세요",
+    "corporateEmailRequired": "회사 이메일 주소를 사용해주세요",
+    "phoneRequired": "전화번호를 입력해주세요",
+    "invalidPhone": "올바른 전화번호를 입력해주세요"
+  }
+}

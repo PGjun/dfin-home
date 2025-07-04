@@ -1,0 +1,327 @@
+{
+  "Navigation": {
+    "about": "About us",
+    "solutions": "Solutions",
+    "service": "Service",
+    "contact": "Contact us"
+  },
+  "Language": {
+    "english": "English",
+    "korean": "한국어"
+  },
+  "Main": {
+    "HeroSection": {
+      "title1": "Powering the",
+      "title2": "Future of",
+      "title3": "Digital Finance",
+      "desc": "Scalable, secure, and intelligent blockchain solutions\n— built for what's next.",
+      "ExploreSolutions": "Explore Solutions",
+      "LearnMore": "Learn More"
+    },
+    "ContactForm": {
+      "title": "Try Now !",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "corporateEmail": "Corporate Email Address",
+      "emailPlaceholder": "Please fill-in a work email address",
+      "phone": "Phone",
+      "remarks": "Remarks",
+      "remarksPlaceholder": "Please fill-in a work email address",
+      "submit": "Submit"
+    },
+    "FeatureSection": {
+      "title": "Build smarter. Scale faster.",
+      "desc": "DFIN empowers startups and enterprises with cutting-edge blockchain solutions.",
+      "card1": {
+        "title": "Who We Are",
+        "desc": "A team of technologists and innovators, DFIN creates purposeful digital experiences that drive real-world impact and future growth."
+      },
+      "card2": {
+        "title": "What We Do",
+        "desc": "DFIN builds high-performance web and mobile solutions, helping organizations accelerate growth through smart, scalable technology."
+      },
+      "card3": {
+        "title": "Beyond Services",
+        "desc": "We go beyond development — partnering with you to accelerate innovation and drive long-term impact."
+      },
+      "more": "more"
+    },
+    "SolutionsSection": {
+      "title": "End-to-End\nBlockchain Solutions by DFIN",
+      "desc": "From trading infrastructure to digital asset platforms,\nDFIN delivers the tools you need to build, grow,\nand lead.",
+      "more": "more",
+      "card1": {
+        "title": "Digital Asset Exchange Solutions",
+        "features": [
+          "Centralized Exchange",
+          "Decentralized Exchange",
+          "Broker Exchange -White label Cryptocurrency Exchange",
+          "Hybrid Exchanges through Web3 Wallets -P2P Crypto Exchange"
+        ],
+        "tags": ["#CEX", "#DEX", "#DApp"]
+      },
+      "card2": {
+        "title": "Trading Software solution",
+        "features": [
+          "Algorithmic Trading Software",
+          "Crypto Trading Bot",
+          "Copy Trading Software",
+          "AI Trading Software"
+        ],
+        "tags": ["#CEX", "#DEX", "#DApp"]
+      },
+      "card3": {
+        "title": "Web3 solution",
+        "features": [
+          "Core Blockchain Development",
+          "NFT Marketplace -digital asset Gaming and Metaverse",
+          "DeFi Development",
+          "Web3 App Development",
+          "Smart Contract Development",
+          "Wallet Development",
+          "dApp Development"
+        ],
+        "tags": ["#Web3", "#DeFi", "#Chain"]
+      }
+    },
+    "ServiceSection": {
+      "title": "DFIN Service",
+      "desc": "DFIN empowers startups and enterprises with cutting-edge blockchain solutions.",
+      "more": "more",
+      "steps": [
+        {
+          "title": "Service process",
+          "desc": [
+            "Pre-production Based on your",
+            "project requirements, our",
+            "experts will brainstorm ideas,",
+            "conduct market research and",
+            "decide on the direction to take",
+            "for your Project"
+          ],
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/c4a5ea87bfc8fc7c5e64670f8c8f4f94f6424d14?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 1,
+          "bgColor": "bg-blue-50"
+        },
+        {
+          "title": "Concept Creation",
+          "desc": [
+            "Based on the ideation process,",
+            "we will create a unique",
+            "concept for your Project before",
+            "beginning the development",
+            "process."
+          ],
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/3603fd4f8e91ee1d85951b36aab800410659850e?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 2,
+          "bgColor": "bg-green-50"
+        },
+        {
+          "title": "Development",
+          "desc": [
+            "Using the latest tech stack,",
+            "your preferred functionalities,",
+            "we will begin the coding and",
+            "development process."
+          ],
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ac7026840f636ef1175ca4ea9c8d8ac9f8e42f7c?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 3,
+          "bgColor": "bg-yellow-50"
+        },
+        {
+          "title": "Testing",
+          "desc": [
+            "Before we launch the final",
+            "product for your consumers,",
+            "we will ensure quality and",
+            "seamless operation through",
+            "thorough testing."
+          ],
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/c4a5ea87bfc8fc7c5e64670f8c8f4f94f6424d14?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 4,
+          "bgColor": "bg-purple-50"
+        },
+        {
+          "title": "Launch",
+          "desc": [
+            "With our turnkey software",
+            "development services, we will",
+            "ensure a seamless release of",
+            "your Project on your desired",
+            "platforms."
+          ],
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/3603fd4f8e91ee1d85951b36aab800410659850e?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 5,
+          "bgColor": "bg-red-50"
+        },
+        {
+          "title": "Maintenance",
+          "desc": [
+            "Even after delivering a",
+            "project, we keep tabs on",
+            "the performance and fix",
+            "any bugs or issues to",
+            "ensure smooth operation."
+          ],
+          "iconSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/3603fd4f8e91ee1d85951b36aab800410659850e?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+          "iconCount": 6,
+          "bgColor": "bg-red-50"
+        }
+      ]
+    },
+    "NewsSection": {
+      "title": "DFIN News",
+      "items": [
+        {
+          "title": "Service process",
+          "desc": "Pre-production Based on your project requirements, our experts will brainstorm ideas, conduct market research and decide on the direction to take for your Project",
+          "date": "2025.03.20",
+          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1c82237980e0abf06b20cf5938444dbe62ddbbd9?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+        },
+        {
+          "title": "Digital Innovation",
+          "desc": "Exploring the future of blockchain technology and its impact on financial services. Our team continuously researches emerging trends to provide cutting-edge solutions. Stay ahead with DFIN's innovative approach to digital finance and blockchain integration for enterprise solutions",
+          "date": "2025.03.15",
+          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/f8c3a0fa70f823e2a7ab695415501ce321a229fe?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+        },
+        {
+          "title": "New Partnership",
+          "desc": "DFIN announces strategic partnership with leading financial institutions to expand blockchain adoption. This collaboration will accelerate digital transformation. Together we're building the future of finance through innovative blockchain solutions and sustainable digital growth strategies",
+          "date": "2025.03.10",
+          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1c82237980e0abf06b20cf5938444dbe62ddbbd9?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+        }
+      ]
+    },
+    "Footer": {
+      "companyInfo": "Registered in South Korea. Business Registration No. 107-81-12345",
+      "address": "Address: 4F, 242, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea",
+      "copyright": "© 2025 DFIN Inc. All rights reserved."
+    }
+  },
+  "About": {
+    "title": "About us",
+    "heroTitle": "About us",
+    "sectionTitle1": "Define the Right Technologies",
+    "sectionTitle2": "for Your Project",
+    "sectionDesc": "Selecting the right technology stack is a critical step toward building a successful product. It influences everything from development costs to system performance and long-term scalability. At Hashcodex, we leverage our deep expertise and up-to-date knowledge of emerging IT trends to recommend the most effective, cost-efficient, and future-proof technology solutions tailored to your business goals.",
+    "FeatureCards": {
+      "card1": {
+        "title": "Who We Are",
+        "subtitle": "Crafting Digital Experiences for a Smarter Future",
+        "desc": "A team of technologists and innovators, DFIN creates purposeful digital experiences that drive real-world impact and future growth."
+      },
+      "card2": {
+        "title": "What We Do",
+        "subtitle": "Crafting Digital Experiences for a Smarter Future",
+        "desc": "DFIN builds high-performance web and mobile solutions, helping organizations accelerate growth through smart, scalable technology."
+      },
+      "card3": {
+        "title": "Beyond Services",
+        "subtitle": "— We Build Success Stories",
+        "desc": "We go beyond development — partnering with you to accelerate innovation and drive long-term impact."
+      }
+    }
+  },
+  "Service": {
+    "title": "Service",
+    "heroTitle": "Service",
+    "ServiceProcess": {
+      "steps": [
+        {
+          "title": "Service process",
+          "desc": "Pre-production Based on your project requirements, our experts will brainstorm ideas, conduct market research and decide on the direction to take for your Project"
+        },
+        {
+          "title": "Concept Creation",
+          "desc": "Based on the ideation process, we will create a unique concept for your Project before beginning the development process."
+        },
+        {
+          "title": "Development",
+          "desc": "Using the latest tech stack, your preferred functionalities, we will begin the coding and development process."
+        },
+        {
+          "title": "Testing",
+          "desc": "Before we launch the final product for your consumers, we will ensure quality and seamless operation through thorough testing."
+        },
+        {
+          "title": "Launch",
+          "desc": "With our turnkey software development services, we will ensure a seamless release of your Project on your desired platforms."
+        },
+        {
+          "title": "Maintenance",
+          "desc": "Even after delivering a project, we keep tabs on the performance and fix any bugs or issues to ensure smooth operation."
+        }
+      ]
+    }
+  },
+  "Solutions": {
+    "title": "Solutions",
+    "heroTitle": "Solutions",
+    "SolutionsGrid": {
+      "solutions": [
+        {
+          "title": "Trading Software solution",
+          "details": [
+            "Algorithmic Trading Software",
+            "Crypto Trading Bot",
+            "Copy Trading Software",
+            "AI Trading Software"
+          ],
+          "tags": ["#Algo", "#Bot", "#AI"]
+        },
+        {
+          "title": "Digital Asset Exchange Solutions",
+          "details": [
+            "Centralized Exchange",
+            "Decentralized Exchange",
+            "Broker Exchange -White label Cryptocurrency Exchange",
+            "Hybrid Exchanges through Web3 Wallets -P2P Crypto Exchange"
+          ],
+          "tags": ["#CEX", "#DEX", "#DApp"]
+        },
+        {
+          "title": "Web3 solution",
+          "details": [
+            "Core Blockchain Development",
+            "NFT Marketplace -digital asset Gaming and Metaverse",
+            "DeFi Development",
+            "Web3 App Development",
+            "Smart Contract Development",
+            "Wallet Development",
+            "dApp Development"
+          ],
+          "tags": ["#Web3", "#DeFi", "#Chain"]
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "title": "Contact us",
+    "pageTitle": "Service",
+    "contactInfo": "Contact info",
+    "address": "4F, 242, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea",
+    "email": "dfin@dfin.co.kr",
+    "phone": "310-386-1623",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "corporateEmail": "Corporate Email Address",
+    "emailPlaceholder": "Please fill-in a work email address",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "Enter your phone number",
+    "remarks": "Remarks",
+    "remarksPlaceholder": "Please describe your inquiry or requirements",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "required": "Required",
+    "thankYou": "Thank you!",
+    "successMessage": "Your message has been sent successfully. We'll get back to you soon.",
+    "sendAnother": "Send Another Message",
+    "firstNameRequired": "First name is required",
+    "lastNameRequired": "Last name is required",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Please enter a valid email address",
+    "corporateEmailRequired": "Please use a corporate email address",
+    "phoneRequired": "Phone number is required",
+    "invalidPhone": "Please enter a valid phone number"
+  }
+}
