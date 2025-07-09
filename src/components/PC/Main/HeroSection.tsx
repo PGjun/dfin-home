@@ -2,7 +2,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 // import { Link } from "@/i18n/navigation";
-import { /*useLocale,*/ useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { ContactForm } from "@/components/Mobile/ContactUs/ContactForm";
 
 export const HeroSection = () => {
@@ -27,14 +27,14 @@ export const HeroSection = () => {
         <div className="flex gap-5 max-md:flex-col max-md:">
           <div className="w-[50%] max-md:ml-0 max-md:w-full">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b205b1dc95da51dfa18207f5f397cecc9edf800?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              src="/bg_main_pattern_left.svg"
               className="object-contain grow mt-20 w-full aspect-[1.5] max-md:mt-10 max-md:max-w-full"
               alt="Hero background left"
             />
           </div>
           <div className="ml-5 w-[50%] max-md:ml-0 max-md:w-full">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ebc0970e38c5939a03c6b44cb5ed4aeb16d3534?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              src="/bg_main_pattern_right.svg"
               className="object-contain w-full aspect-[1.59] max-md:mt-10 max-md:max-w-full"
               alt="Hero background right"
             />

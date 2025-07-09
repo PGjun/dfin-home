@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Link, useRouter, usePathname } from "@/i18n/navigation";
-import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useLocale, useTranslations, useSetLocale } from "@/lib/hooks";
 
 export const MobileHeader = () => {
   const t = useTranslations();
   const locale = useLocale();
-  const router = useRouter();
+  const setLocale = useSetLocale();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -32,7 +32,7 @@ export const MobileHeader = () => {
 
   const isActive = (href: string) => {
     if (!isMounted) return false;
-    const currentPath = pathname.replace(`/${locale}`, "") || "/";
+    const currentPath = pathname || "/";
     const targetPath = href;
     return (
       currentPath === targetPath ||
@@ -40,8 +40,8 @@ export const MobileHeader = () => {
     );
   };
 
-  const switchLanguage = (newLocale: string) => {
-    router.push(pathname, { locale: newLocale });
+  const switchLanguage = (newLocale: "ko" | "en") => {
+    setLocale(newLocale);
     setIsMenuOpen(false);
   };
 
@@ -64,11 +64,10 @@ export const MobileHeader = () => {
       <header className="flex items-center justify-between px-4 w-full bg-white min-h-14 shadow-[0px_2px_4px_rgba(0,0,0,0.08)]">
         <Link
           href="/"
-          locale={locale}
           className="flex items-center hover:opacity-80 transition-opacity duration-200 cursor-pointer"
         >
-          <Image
-            src="/dfin_header_logo.svg"
+          <img
+            src="/logo_dfin_header.svg"
             alt="DFIN"
             width={126}
             height={28}
@@ -121,7 +120,6 @@ export const MobileHeader = () => {
               <div className="space-y-12 mt-8">
                 <Link
                   href="/about"
-                  locale={locale}
                   className={`block text-[24px] font-normal text-white transition-colors duration-200 hover:opacity-80 cursor-pointer ${
                     isActive("/about") ? "font-semibold" : ""
                   }`}
@@ -131,7 +129,6 @@ export const MobileHeader = () => {
                 </Link>
                 <Link
                   href="/solutions"
-                  locale={locale}
                   className={`block text-[24px] font-normal text-white transition-colors duration-200 hover:opacity-80 cursor-pointer ${
                     isActive("/solutions") ? "font-semibold" : ""
                   }`}
@@ -141,7 +138,6 @@ export const MobileHeader = () => {
                 </Link>
                 <Link
                   href="/service"
-                  locale={locale}
                   className={`block text-[24px] font-normal text-white transition-colors duration-200 hover:opacity-80 cursor-pointer ${
                     isActive("/service") ? "font-semibold" : ""
                   }`}
@@ -151,7 +147,6 @@ export const MobileHeader = () => {
                 </Link>
                 <Link
                   href="/contact"
-                  locale={locale}
                   className={`block text-[24px] font-normal text-white transition-colors duration-200 hover:opacity-80 cursor-pointer ${
                     isActive("/contact") ? "font-semibold" : ""
                   }`}

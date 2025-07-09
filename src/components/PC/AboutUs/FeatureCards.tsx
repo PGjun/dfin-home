@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 
 interface FeatureCard {
   icon: string;
@@ -21,21 +21,21 @@ export const FeatureCards: React.FC<FeatureCardsProps> = ({
 
   const cards: FeatureCard[] = [
     {
-      icon: "/aboutus_icon1.svg",
+      icon: "/icon_aboutus1.svg",
       title: t("card1.title"),
       subtitle: t("card1.subtitle"),
       description: t("card1.desc"),
       borderStyle: "solid",
     },
     {
-      icon: "/aboutus_icon2.svg",
+      icon: "/icon_aboutus2.svg",
       title: t("card2.title"),
       subtitle: t("card2.subtitle"),
       description: t("card2.desc"),
       borderStyle: "dashed",
     },
     {
-      icon: "/aboutus_icon3.svg",
+      icon: "/icon_aboutus3.svg",
       title: t("card3.title"),
       subtitle: t("card3.subtitle"),
       description: t("card3.desc"),
@@ -46,7 +46,7 @@ export const FeatureCards: React.FC<FeatureCardsProps> = ({
   return (
     <section
       style={{
-        backgroundImage: "url('/feature_card_bg.svg')",
+        backgroundImage: "url('/bg_aboutus_bottom_pattern.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

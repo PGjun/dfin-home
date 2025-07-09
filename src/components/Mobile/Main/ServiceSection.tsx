@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { useTranslations } from "@/lib/hooks";
+import Link from "next/link";
 
 interface ServiceStep {
   title: string;
@@ -10,14 +10,13 @@ interface ServiceStep {
 
 export const ServiceSection = () => {
   const t = useTranslations("Main.ServiceSection");
-  const locale = useLocale();
   const steps = t.raw("steps") as ServiceStep[];
 
   return (
     <section className="flex overflow-hidden relative gap-4 items-start px-4 w-full">
-      <div className="flex absolute right-0 top-0 z-0 flex-col pb-96 h-[529px]">
+      <div className="flex absolute right-0 top-0 z-0 flex-col pb-96 h-[529px] w-[228px]">
         <img
-          src="/mobile_service_pattern.svg"
+          src="/bg_service_pattern.svg"
           className="object-contain max-w-full"
           alt="Background pattern"
         />
@@ -35,7 +34,6 @@ export const ServiceSection = () => {
           <div className="self-start pt-5">
             <Link
               href="/service"
-              locale={locale}
               className="flex gap-1 items-center border-b border-solid border-b-[color:var(--Font-Basic,#000B20)]"
             >
               <div className="flex gap-2.5 items-start self-stretch my-auto text-sm font-semibold tracking-tight whitespace-nowrap text-slate-950">
@@ -45,9 +43,9 @@ export const ServiceSection = () => {
               </div>
               <div className="flex items-center self-stretch my-auto w-4">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/6d5c07f17293124d5b8cacbfea7e8a49b885099b?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                  src="/icon_right_arrow.svg"
                   className="object-contain self-stretch my-auto w-4 aspect-square"
-                  alt=""
+                  alt="More icon"
                 />
               </div>
             </Link>

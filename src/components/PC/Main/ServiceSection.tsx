@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
-import { Link } from "@/i18n/navigation";
-import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
+import { useTranslations } from "@/lib/hooks";
 import { ServiceCard } from "./ServiceCard";
 
 interface ServiceStep {
@@ -14,7 +14,6 @@ interface ServiceStep {
 
 export const ServiceSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const locale = useLocale();
   const t = useTranslations("Main.ServiceSection");
 
   const services: ServiceStep[] = [
@@ -63,7 +62,7 @@ export const ServiceSection = () => {
     >
       <div className="flex overflow-hidden items-end left-[-200px] bottom-0 z-0 top-0 flex-col px-20 w-[1920px] absolute max-md:px-5 max-md:pb-24 max-md:max-w-full">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8416f9135b3a269539956f11193635059113b256?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+          src="/bg_service_pattern.svg"
           className="object-contain mb-0 max-w-full aspect-[1.56] w-[428px] max-md:mb-2.5"
           alt="Background decoration"
         />
@@ -83,7 +82,6 @@ export const ServiceSection = () => {
           <div className="flex gap-1 items-center self-start mt-12 border-b border-solid border-b-[color:var(--Font-Basic,#000B20)] max-md:mt-10 group transition-colors duration-200">
             <Link
               href="/service"
-              locale={locale}
               className="flex gap-1 items-center"
             >
               <div className="flex gap-2.5 items-start self-stretch my-auto text-xl font-semibold tracking-tight whitespace-nowrap text-slate-950 transition-colors duration-200">
@@ -93,7 +91,7 @@ export const ServiceSection = () => {
               </div>
               <div className="flex items-center self-stretch my-auto w-5 group-hover:translate-x-1 transition-transform duration-200">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f5ba8d989289004e298ab44d76d1759d1b6eaed?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                  src="/icon_right_arrow.svg"
                   className="object-contain self-stretch my-auto w-5 aspect-square"
                   alt="More icon"
                 />

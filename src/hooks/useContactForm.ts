@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 
 export interface FormData {
   firstName: string;

@@ -1,18 +1,17 @@
 "use client";
 import React from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { ServiceCard } from "./ServiceCard";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 export const SolutionsSection = () => {
   const t = useTranslations("Main.SolutionsSection");
-  const locale = useLocale();
 
   return (
     <section className="relative flex overflow-hidden items-start px-4 w-full bg-[#82A3C9]">
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img
-          src="/mobile_blue_circle.svg"
+          src="/bg_m_solutions_circle.svg"
           className="object-contain max-w-full"
           alt="Background pattern"
         />
@@ -28,7 +27,6 @@ export const SolutionsSection = () => {
           <div className="self-start pt-5">
             <Link
               href="/solutions"
-              locale={locale}
               className="flex gap-1 items-center border-b border-solid border-b-[color:var(--Font-Basic,#FFF)]"
             >
               <div className="flex gap-2.5 items-start self-stretch my-auto text-sm font-semibold tracking-tight whitespace-nowrap text-white">
@@ -38,7 +36,7 @@ export const SolutionsSection = () => {
               </div>
               <div className="flex items-center self-stretch my-auto w-4">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/fae2b291231633b50f5f2f8c7643728c1e996319?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                  src="/icon_right_arrow_white.svg"
                   className="object-contain self-stretch my-auto w-4 aspect-square"
                   alt=""
                 />
@@ -49,7 +47,7 @@ export const SolutionsSection = () => {
 
         <div className="pt-10 w-full">
           <ServiceCard
-            image="https://cdn.builder.io/api/v1/image/assets/TEMP/95dc2fa7d7266e5b33a336da8f03eaae6144c565?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+            image="/img_m_main_solutions1.png"
             title={t("card1.title")}
             features={t.raw("card1.features") as string[]}
             tags={t.raw("card1.tags") as string[]}
@@ -57,7 +55,7 @@ export const SolutionsSection = () => {
 
           <div className="mt-4">
             <ServiceCard
-              image="https://cdn.builder.io/api/v1/image/assets/TEMP/aaea190eabaf1e63b06af1d9117bc5ba4bce3913?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              image="/img_m_main_solutions2.png"
               title={t("card2.title")}
               features={t.raw("card2.features") as string[]}
               tags={t.raw("card2.tags") as string[]}
@@ -66,7 +64,6 @@ export const SolutionsSection = () => {
 
           <div className="mt-4">
             <ServiceCard
-              image="https://cdn.builder.io/api/v1/image/assets/TEMP/aaea190eabaf1e63b06af1d9117bc5ba4bce3913?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
               title={t("card3.title")}
               features={t.raw("card3.features") as string[]}
               tags={t.raw("card3.tags") as string[]}

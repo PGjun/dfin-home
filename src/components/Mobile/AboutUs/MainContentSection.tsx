@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 
 export const MainContentSection: React.FC = () => {
   const t = useTranslations("About");
@@ -9,7 +9,7 @@ export const MainContentSection: React.FC = () => {
     <section className="overflow-hidden px-4 pt-5 pb-10 w-full">
       <div className="overflow-hidden w-full">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/d4a03a2a8a93f3dda06b3e37a26af332a2fc4e36?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+          src="/img_aboutus_people.png"
           className="object-contain w-full aspect-[1.37]"
           alt="Technology solutions"
         />

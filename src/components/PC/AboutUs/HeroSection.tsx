@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 
 interface HeroSectionProps {
   title?: string;
@@ -17,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section
       style={{
-        backgroundImage: "url('/aboutus_bg.svg')",
+        backgroundImage: "url('/bg_top_pattern.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { ContactForm } from "@/components/Mobile/ContactUs/ContactForm";
 
 export const HeroSection = () => {
@@ -11,7 +11,7 @@ export const HeroSection = () => {
       <div
         className="mt-0 w-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/main_background.svg')",
+          backgroundImage: "url('/bg_m_main.svg')",
           minHeight: "613px",
         }}
       >

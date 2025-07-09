@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { useTranslations } from "@/lib/hooks";
 
 export const Footer = () => {
   const t = useTranslations("Main.Footer");
@@ -11,8 +10,8 @@ export const Footer = () => {
       <div className="flex flex-wrap max-w-full w-[1280px]">
         <div className="flex flex-col flex-1 shrink items-start basis-0 min-w-60 max-md:max-w-full">
           <div className="flex max-w-full min-h-7 w-[126px]">
-            <Image
-              src="/dfin_footer_logo.svg"
+            <img
+              src="/logo_dfin_footer.svg"
               alt="DFIN"
               width={126}
               height={28}
@@ -26,7 +25,7 @@ export const Footer = () => {
               aria-label="Social media link"
             >
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b7dbe5524698cd3718042fafec23411756aea30?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                src="/icon_facebook.svg"
                 className="object-contain self-stretch my-auto w-3 aspect-square"
                 alt="Social media icon"
               />
@@ -37,7 +36,7 @@ export const Footer = () => {
               aria-label="Social media link"
             >
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/239e62c44b09d149d9d21d59d7e410a3895c977d?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                src="/icon_twitter.svg"
                 className="object-contain self-stretch my-auto w-3 aspect-square"
                 alt="Social media icon"
               />

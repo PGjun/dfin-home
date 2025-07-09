@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { NewsCard } from "./NewsCard";
 
 interface NewsItemData {
@@ -37,7 +37,7 @@ export const NewsSection = () => {
     <section className="flex overflow-hidden relative gap-4 items-start px-4 w-full bg-sky-50">
       <div className="flex absolute top-0 left-0 z-0 flex-col">
         <img
-          src="/mobile_news_pattern.svg"
+          src="/bg_m_main_news_pattern.svg"
           className="object-contain z-10 w-full"
           alt="Background pattern"
         />
@@ -81,7 +81,7 @@ export const NewsSection = () => {
             aria-label="Previous slide"
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c0ac86e967f59b4304c7f3b87be5bd6b040814c3?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              src="/icon_keyboard_arrow_left.svg"
               className="object-contain shrink-0 w-6 aspect-square"
               alt="Previous"
             />
@@ -95,7 +95,7 @@ export const NewsSection = () => {
             aria-label="Next slide"
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/67fc52c68cbccd8b6c909f7f3caa156ae61508a3?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              src="/icon_keyboard_arrow_right.svg"
               className="object-contain shrink-0 w-6 aspect-square"
               alt="Next"
             />

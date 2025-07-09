@@ -36,7 +36,7 @@ export const ContactForm = () => {
                 name="email"
                 label="Corporate Email Address"
                 placeholder="Please fill-in a work email address"
-                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/2bcafd216a536a7765f6eb268300752851ed5b94?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                icon="/icon_mail.svg"
                 type="email"
               />
             </div>
@@ -48,7 +48,7 @@ export const ContactForm = () => {
                 name="phone"
                 label="Phone"
                 placeholder="Please fill-in a phone number"
-                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/b0ea8563f059ae45954c2758a34df8d9c3afdfe6?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                icon="/icon_phone.svg"
                 type="tel"
               />
             </div>
@@ -60,7 +60,7 @@ export const ContactForm = () => {
                 name="message"
                 label="Remarks"
                 placeholder="Please fill-in a work email address"
-                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/89955d07c1e921d291cdcfcdbb4474bcd446e9ce?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                icon="/icon_message.svg"
                 type="textarea"
                 className="min-h-[110px]"
               />
@@ -91,7 +91,7 @@ export const ContactForm = () => {
               </div>
               <div className="flex items-center self-stretch my-auto w-3.5">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b5e5188fc2f19a29567566a85b825faf16de2d6?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                  src="/icon_arrow_chevron_right.svg"
                   className="object-contain self-stretch my-auto w-3.5 aspect-square"
                   alt=""
                 />

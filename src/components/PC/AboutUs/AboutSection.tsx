@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 
 interface AboutSectionProps {
   className?: string;
@@ -33,7 +33,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           <div className="self-stretch my-auto min-w-60 w-[410px]">
             <div className="max-w-full w-[410px]">
               <img
-                src="/aboutus_img.svg"
+                src="/img_aboutus_people.png"
                 className="object-contain w-full aspect-[1.36]"
                 alt="Technology illustration"
               />

@@ -33,6 +33,7 @@ export const NewsItem = ({
           <img
             src={imageSrc}
             className="object-contain aspect-[1.28] w-[197px]"
+            alt={`${title} image`}
           />
         </div>
       </div>

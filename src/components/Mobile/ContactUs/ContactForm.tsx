@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { InputField } from "./InputField";
 import { useContactForm } from "@/hooks/useContactForm";
 import { usePathname } from "next/navigation";
@@ -103,7 +103,7 @@ export const ContactForm: React.FC = () => {
                 <InputField
                   label={t("corporateEmail")}
                   placeholder={t("emailPlaceholder")}
-                  icon="https://cdn.builder.io/api/v1/image/assets/TEMP/30bbdd305ff837d63c54f39e533cb140b73c7fc4?placeholderIfAbsent=true&apiKey=185be5d8cbb446c398eca441ffa5fb2f"
+                  icon="/icon_mail.svg"
                   type="email"
                   required
                   value={values.email}
@@ -117,7 +117,7 @@ export const ContactForm: React.FC = () => {
                 <InputField
                   label={t("phoneLabel")}
                   placeholder={t("phonePlaceholder")}
-                  icon="https://cdn.builder.io/api/v1/image/assets/TEMP/b0ea8563f059ae45954c2758a34df8d9c3afdfe6?placeholderIfAbsent=true&apiKey=185be5d8cbb446c398eca441ffa5fb2f"
+                  icon="/icon_phone.svg"
                   type="tel"
                   required
                   value={values.phone}
@@ -131,7 +131,7 @@ export const ContactForm: React.FC = () => {
                 <InputField
                   label={t("remarks")}
                   placeholder={t("remarksPlaceholder")}
-                  icon="https://cdn.builder.io/api/v1/image/assets/TEMP/1a8112d64558faac347644d5140461afb71ed1f6?placeholderIfAbsent=true&apiKey=185be5d8cbb446c398eca441ffa5fb2f"
+                  icon="/icon_message.svg"
                   type="textarea"
                   className="min-h-[110px]"
                   value={values.message}
@@ -170,7 +170,7 @@ export const ContactForm: React.FC = () => {
                       <div className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin" />
                     ) : (
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/83301072d16a4023d7ce366d296e878b7ba08b51?placeholderIfAbsent=true&apiKey=185be5d8cbb446c398eca441ffa5fb2f"
+                        src="/icon_arrow_chevron_right.svg"
                         className="object-contain self-stretch my-auto w-3.5 aspect-square"
                         alt=""
                       />

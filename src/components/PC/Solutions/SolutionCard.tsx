@@ -24,6 +24,7 @@ export const SolutionCard: React.FC<SolutionCardProps> = ({
         <img
           src={imageUrl}
           className="object-contain z-10 w-full aspect-[2.16]"
+          alt={`${title} image`}
         />
       </div>
       <div className="flex-1 self-stretch pt-5 w-full font-medium">

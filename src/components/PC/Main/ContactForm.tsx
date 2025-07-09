@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 
 export const ContactForm = () => {
   const t = useTranslations("Main.ContactForm");
@@ -66,8 +66,9 @@ export const ContactForm = () => {
                 <div className="flex flex-1 shrink gap-2 items-center w-full basis-0">
                   <div className="flex items-center self-stretch my-auto w-4">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6daf4ec2147a1d0a76e7a2fa039fe70fd597697f?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                      src="/icon_mail.svg"
                       className="object-contain self-stretch my-auto w-4 aspect-square"
+                      alt="Corporate email icon"
                     />
                   </div>
                   <div className="flex flex-1 shrink gap-2.5 items-center self-stretch my-auto text-sm tracking-tight basis-0 text-slate-950">
@@ -92,8 +93,9 @@ export const ContactForm = () => {
                 <div className="flex flex-1 shrink gap-2 items-center w-full basis-0">
                   <div className="flex items-center self-stretch my-auto w-4">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/169524e0de6466857f26b0df468885347f96315a?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                      src="/icon_phone.svg"
                       className="object-contain self-stretch my-auto w-4 aspect-square"
+                      alt="Phone icon"
                     />
                   </div>
                   <div className="flex flex-1 shrink gap-2.5 items-center self-stretch my-auto text-sm tracking-tight whitespace-nowrap basis-0 text-slate-950">
@@ -117,8 +119,9 @@ export const ContactForm = () => {
                 <div className="flex flex-1 shrink gap-2 items-center w-full basis-0">
                   <div className="flex items-center self-stretch my-auto w-4">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/c29cafea3fa86874e000989a6b499062d9707ef0?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                      src="/icon_message.svg"
                       className="object-contain self-stretch my-auto w-4 aspect-square"
+                      alt="Remarks icon"
                     />
                   </div>
                   <div className="flex flex-1 shrink gap-2.5 items-center self-stretch my-auto text-sm tracking-tight whitespace-nowrap basis-0 text-slate-950">
@@ -149,8 +152,9 @@ export const ContactForm = () => {
               </div>
               <div className="flex items-center self-stretch my-auto w-3.5">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e343a153acea8c440ee256c8f377a66cfa33224a?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                  src="/icon_arrow_chevron_right.svg"
                   className="object-contain self-stretch my-auto w-3.5 aspect-square"
+                  alt="Submit icon"
                 />
               </div>
             </button>

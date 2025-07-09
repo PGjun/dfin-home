@@ -1,14 +1,13 @@
 "use client";
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
-import { Link } from "@/i18n/navigation";
-import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
+import { useTranslations } from "@/lib/hooks";
 import { SolutionCard } from "./SolutionCard";
 
 export const SolutionsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const locale = useLocale();
   const t = useTranslations("Main.SolutionsSection");
 
   useEffect(() => {
@@ -33,7 +32,7 @@ export const SolutionsSection = () => {
       ref={sectionRef}
       className=" bg-cover bg-center bg-no-repeat flex relative z-0 flex-col justify-center items-center w-full bg-[#82A3C9] max-md:max-w-full"
       style={{
-        backgroundImage: "url('/blue_circle.svg')",
+        backgroundImage: "url('/bg_solutions_circle.svg')",
       }}
     >
       <div className="flex absolute right-0 z-0 bottom-[-78px] h-[833px] min-h-[833px] w-[1920px] max-md:max-w-full" />
@@ -57,7 +56,6 @@ export const SolutionsSection = () => {
             <div className="self-start pt-12 mt-2.5 text-xl font-semibold tracking-tight whitespace-nowrap">
               <Link
                 href="/solutions"
-                locale={locale}
                 className="flex gap-1 items-center border-b border-solid border-b-[color:var(--Primary-White,#FFF)] transition-colors duration-200 group"
               >
                 <div className="flex gap-2.5 items-start self-stretch my-auto">
@@ -68,7 +66,7 @@ export const SolutionsSection = () => {
                   </div>
                 </div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2cff1d0cebfcf2447aba64a981f27f5052507f64?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                  src="/icon_right_arrow_white.svg"
                   className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square group-hover:translate-x-1 transition-transform duration-200"
                   alt="More arrow"
                 />
@@ -83,9 +81,9 @@ export const SolutionsSection = () => {
             }`}
           >
             <SolutionCard
-              imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/47982d56f36f5a7612990d0b05c576b57fe118d7?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              imageSrc="/img_solutions1.png"
               title={t("card1.title")}
-              features={t.raw("card1.features") as string[]}
+              details={t.raw("card1.features") as string[]}
               tags={t.raw("card1.tags") as string[]}
               className="min-h-[322px] "
             />
@@ -100,9 +98,9 @@ export const SolutionsSection = () => {
             }`}
           >
             <SolutionCard
-              imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/5f334ffe2d557cd3c71e3c2f3f06e363ae3b3864?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              imageSrc="/img_solutions2.png"
               title={t("card2.title")}
-              features={t.raw("card2.features") as string[]}
+              details={t.raw("card2.features") as string[]}
               tags={t.raw("card2.tags") as string[]}
               className="h-full "
             />
@@ -114,18 +112,13 @@ export const SolutionsSection = () => {
               <h3 className="text-2xl tracking-tight text-slate-950 max-md:max-w-full">
                 {t("card3.title")}
               </h3>
-              <div className="flex flex-col justify-center mt-5 w-full text-base tracking-tight text-slate-600 max-md:max-w-full">
-                {(t.raw("card3.features") as string[]).map((feature, index) => (
-                  <div
-                    key={index}
-                    className={`text-slate-600 max-md:max-w-full ${
-                      index > 0 ? "mt-2" : ""
-                    }`}
-                  >
-                    {feature}
-                  </div>
+              <ul className="pt-2 w-full tracking-tight text-slate-600 list-disc pl-5 space-y-1">
+                {(t.raw("card3.features") as string[]).map((detail, index) => (
+                  <li key={index} className="text-slate-600">
+                    {detail}
+                  </li>
                 ))}
-              </div>
+             </ul>
               <div className="flex gap-2.5 items-start self-start px-1 mt-5 text-sm tracking-tight text-blue-600 whitespace-nowrap">
                 {(t.raw("card3.tags") as string[]).map((tag, index) => (
                   <button

@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 
 export const HeroSection: React.FC = () => {
   const t = useTranslations("Solutions");
@@ -8,7 +8,7 @@ export const HeroSection: React.FC = () => {
   return (
     <section
       style={{
-        backgroundImage: "url('/solutions_bg.svg')",
+        backgroundImage: "url('/bg_top_pattern.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

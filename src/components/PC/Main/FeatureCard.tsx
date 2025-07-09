@@ -17,6 +17,7 @@ export const FeatureCard = ({
         <img
           src={iconSrc}
           className="object-contain max-w-full aspect-square w-[100px]"
+          alt={`${title} icon`}
         />
       </div>
       <div className="pt-8 w-full font-medium">

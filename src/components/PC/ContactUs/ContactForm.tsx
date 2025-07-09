@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { InputField } from "./InputField";
 import { useContactForm } from "@/hooks/useContactForm";
 
@@ -88,7 +88,7 @@ export const ContactForm: React.FC = () => {
             <InputField
               label={t("corporateEmail")}
               placeholder={t("emailPlaceholder")}
-              icon="https://cdn.builder.io/api/v1/image/assets/TEMP/ce46c465a6b331e9257aaf58b2efbeb58aec8e56?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              icon="/icon_mail.svg"
               type="email"
               name="email"
               value={values.email}
@@ -101,7 +101,7 @@ export const ContactForm: React.FC = () => {
             <InputField
               label={t("phoneLabel")}
               placeholder={t("phonePlaceholder")}
-              icon="https://cdn.builder.io/api/v1/image/assets/TEMP/b0ea8563f059ae45954c2758a34df8d9c3afdfe6?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              icon="/icon_phone.svg"
               type="tel"
               name="phone"
               value={values.phone}
@@ -116,7 +116,7 @@ export const ContactForm: React.FC = () => {
             <InputField
               label={t("remarks")}
               placeholder={t("remarksPlaceholder")}
-              icon="https://cdn.builder.io/api/v1/image/assets/TEMP/1b79ac45e3698a0afaf1c5324d970c3d16e3cedc?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+              icon="/icon_message.svg"
               type="textarea"
               className="min-h-[111px] max-md:max-w-full"
               name="remarks"
@@ -153,7 +153,7 @@ export const ContactForm: React.FC = () => {
               <div className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin" />
             ) : (
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/095bb7689fe927d319b21895dc4daa65c5b7d86f?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0"
+                src="/icon_arrow_chevron_right.svg"
                 className="object-contain self-stretch my-auto w-3.5 aspect-square"
                 alt="Submit arrow"
               />

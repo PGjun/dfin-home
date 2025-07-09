@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ServiceCardProps {
-  image: string;
+  image?: string;
   title: string;
   features: string[];
   tags: string[];
@@ -17,14 +17,16 @@ export const ServiceCard = ({
 }: ServiceCardProps) => {
   return (
     <article className="overflow-hidden p-4 w-full bg-white">
-      <div className="overflow-hidden w-full bg-red-800">
+      {image && (
+      <div className="overflow-hidden w-full">
         <img
           src={image}
-          className="object-contain w-full aspect-[2.04]"
-          alt={imageAlt || title}
-        />
-      </div>
-      <h3 className="flex-1 shrink self-stretch pt-4 w-full text-base font-medium tracking-tight basis-0 text-slate-950">
+          className="object-contain w-full aspect-[2.04] mb-4"
+            alt={imageAlt || title}
+          />
+        </div>
+      )}
+      <h3 className="flex-1 shrink self-stretch w-full text-base font-medium tracking-tight basis-0 text-slate-950">
         {title}
       </h3>
       <ul className="pt-2 w-full text-xs tracking-tight text-slate-600 list-disc pl-5 space-y-1">

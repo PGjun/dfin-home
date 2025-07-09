@@ -1,14 +1,13 @@
 "use client";
-import { Link, useRouter, usePathname } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { useTranslations, useLocale, useSetLocale } from "@/lib/hooks";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export const Header = () => {
   const t = useTranslations();
   const locale = useLocale();
-  const router = useRouter();
+  const setLocale = useSetLocale();
   const pathname = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -33,7 +32,7 @@ export const Header = () => {
 
   const isActive = (href: string) => {
     if (!isMounted) return false; // 서버 렌더링 시에는 항상 false 반환
-    const currentPath = pathname.replace(`/${locale}`, "") || "/";
+    const currentPath = pathname || "/";
     const targetPath = href;
     return (
       currentPath === targetPath ||
@@ -41,8 +40,8 @@ export const Header = () => {
     );
   };
 
-  const switchLanguage = (newLocale: string) => {
-    router.push(pathname, { locale: newLocale });
+  const switchLanguage = (newLocale: "ko" | "en") => {
+    setLocale(newLocale);
     setIsDropdownOpen(false);
   };
 
@@ -63,7 +62,7 @@ export const Header = () => {
   // 메인페이지인지 확인하는 함수
   const isMainPage = () => {
     if (!isMounted) return false; // 서버 렌더링 시에는 항상 false 반환
-    const currentPath = pathname.replace(`/${locale}`, "") || "/";
+    const currentPath = pathname || "/";
     return currentPath === "/";
   };
 
@@ -73,11 +72,10 @@ export const Header = () => {
         {/* 로고 */}
         <Link
           href="/"
-          locale={locale}
           className="flex shrink-0 self-stretch my-auto h-7 w-[126px] items-center justify-center hover:opacity-80 transition-opacity duration-200 cursor-pointer"
         >
-          <Image
-            src="/dfin_header_logo.svg"
+          <img
+            src="/logo_dfin_header.svg"
             alt="DFIN"
             width={126}
             height={28}
@@ -89,7 +87,6 @@ export const Header = () => {
           <nav className="flex flex-wrap items-center w-full max-md:max-w-full">
             <Link
               href="/about"
-              locale={locale}
               className="block gap-1 self-stretch px-5 py-3 my-auto transition-all duration-200 hover:text-blue-600 cursor-pointer text-slate-950 relative z-10"
             >
               <span
@@ -104,7 +101,6 @@ export const Header = () => {
             </Link>
             <Link
               href="/solutions"
-              locale={locale}
               className="block gap-1 self-stretch px-5 py-3 my-auto transition-all duration-200 hover:text-blue-600 cursor-pointer text-slate-950 relative z-10"
             >
               <span
@@ -119,7 +115,6 @@ export const Header = () => {
             </Link>
             <Link
               href="/service"
-              locale={locale}
               className="block gap-1 self-stretch px-5 py-3 my-auto transition-all duration-200 hover:text-blue-600 cursor-pointer text-slate-950 relative z-10"
             >
               <span
@@ -134,7 +129,6 @@ export const Header = () => {
             </Link>
             <Link
               href="/contact"
-              locale={locale}
               className="block gap-1 self-stretch px-5 py-3 my-auto transition-all duration-200 hover:text-blue-600 cursor-pointer text-slate-950 relative z-10"
             >
               <span
@@ -159,8 +153,8 @@ export const Header = () => {
               isMainPage() ? "text-white" : "text-blue-600"
             }`}
           >
-            <Image
-              src={isMainPage() ? "/language_white.svg" : "/language_blue.svg"}
+            <img
+              src={isMainPage() ? "/icon_language_white.svg" : "/icon_language_blue.svg"}
               alt="Language icon"
               width={24}
               height={24}
@@ -173,9 +167,9 @@ export const Header = () => {
             >
               {currentLang}
             </span>
-            <Image
+            <img
               src={
-                isMainPage() ? "/arrow_down_white.svg" : "/arrow_down_blue.svg"
+                isMainPage() ? "/icon_arrow_down_white.svg" : "/icon_arrow_down_blue.svg"
               }
               alt="Dropdown arrow"
               width={12}

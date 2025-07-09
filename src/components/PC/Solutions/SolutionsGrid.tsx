@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { SolutionCard } from "./SolutionCard";
 
 interface Solution {
@@ -15,9 +15,9 @@ export const SolutionsGrid: React.FC = () => {
 
   const solutionsData = solutions.map((solution: Solution, index: number) => ({
     imageUrl: [
-      "/solutions_img1.svg",
-      "/solutions_img2.svg",
-      "/solutions_img3.svg",
+      "/img_solutions1.png",
+      "/img_solutions2.png",
+      "/img_solutions3.png",
     ][index],
     title: solution.title,
     details: solution.details,

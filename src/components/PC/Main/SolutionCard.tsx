@@ -3,7 +3,7 @@ import * as React from "react";
 interface SolutionCardProps {
   imageSrc: string;
   title: string;
-  features: string[];
+  details: string[];
   tags: string[];
   className?: string;
 }
@@ -11,7 +11,7 @@ interface SolutionCardProps {
 export const SolutionCard = ({
   imageSrc,
   title,
-  features,
+  details,
   tags,
   className = "",
 }: SolutionCardProps) => {
@@ -22,23 +22,21 @@ export const SolutionCard = ({
       <div className="overflow-hidden w-[197px]">
         <img
           src={imageSrc}
-          className="object-contain aspect-[2.18] w-[196px]"
+          className="object-cover aspect-[2.18] w-[196px]"
+          alt={`${title} image`}
         />
       </div>
       <div className="flex flex-col font-medium min-w-60 w-[411px]">
         <h3 className="flex-1 shrink gap-2.5 self-stretch w-full text-2xl tracking-tight basis-0 text-slate-950">
           {title}
         </h3>
-        <div className="flex flex-col justify-center mt-5 w-full text-base tracking-tight text-slate-600">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`${index > 0 ? "mt-2" : ""} text-slate-600`}
-            >
-              {feature}
-            </div>
+        <ul className="pt-2 w-full tracking-tight text-slate-600 list-disc pl-5 space-y-1">
+          {details.map((detail, index) => (
+            <li key={index} className="text-slate-600">
+              {detail}
+            </li>
           ))}
-        </div>
+        </ul>
         <div className="flex gap-2.5 items-start self-start px-1 mt-5 text-sm tracking-tight text-blue-600 whitespace-nowrap">
           {tags.map((tag, index) => (
             <div

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/lib/hooks";
 import { FeatureCard } from "./FeatureCard";
 
 export const FeatureCardsSection: React.FC = () => {
@@ -9,21 +9,21 @@ export const FeatureCardsSection: React.FC = () => {
   const features = [
     {
       imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/e241794704264c44a5f84f376768f368c5f2e972?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+        "/icon_m_aboutus1.svg",
       imageAlt: "Who we are icon",
       title: t("card1.title"),
       description: t("card1.desc"),
     },
     {
       imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/cfb2fc25a91a057c914a79141896db7f00de9da7?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+        "/icon_m_aboutus2.svg",
       imageAlt: "What we do icon",
       title: t("card2.title"),
       description: t("card2.desc"),
     },
     {
       imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0c87cf12ef12cfe889215107fa710295a02a1a06?placeholderIfAbsent=true&apiKey=09fb25ef0f6d4b55af4d364cfb6714d0",
+        "/icon_m_aboutus3.svg",
       imageAlt: "Beyond services icon",
       title: t("card3.title"),
       description: t("card3.desc"),
